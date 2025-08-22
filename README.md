@@ -18,26 +18,6 @@ Built on top of **Llama-3.2-3B-Instruct (Unsloth)** with **LoRA fine-tuning**, t
 
 ---
 
-## ⚙️ Config
-
-**Model Config(Default):** 
-```python
-max_seq_length = 2048
-load_in_4bit = True
-lora_alpha = 16
-lora_dropout = 0
-target_modules = ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
-use_gradient_checkpointing = "unsloth"
-```
-
-**SFTConfig(Default):**  
-  - `learning_rate = 2e-5`  
-  - `num_train_epochs = 6`  
-  - `per_device_train_batch_size = 8`  
-  - `evaluation_strategy = "epoch"`
-
----
-
 ## 💡 Inference & Generation
 
 - <b>Language Detection:</b> Groq API + Deepseek
