@@ -30,7 +30,7 @@ target_modules = ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","dow
 use_gradient_checkpointing = "unsloth"
 ```
 
-**SFTConfig:**  
+**SFTConfig(Default):**  
   - `learning_rate = 2e-5`  
   - `num_train_epochs = 6`  
   - `per_device_train_batch_size = 8`  
